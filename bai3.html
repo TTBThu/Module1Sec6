@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section06</title>
+</head>
+<body>
+    <script>
+        //parseFloat: giá trị nhập vào được chuyển đổi thành số thực (float)
+        var length = parseFloat(prompt("Nhập chiều dài của hình chữ nhật:"));
+        var width = parseFloat(prompt("Nhập chiều rộng của hình chữ nhật:"));
+        var chuVi = (length + width)*2;
+        var dienTich = length * width;
+        console.log("Chu vi của hình chữ nhật là: " + chuVi);
+        console.log("Diện tích của hình chữ nhật là: " + dienTich);
+
+        var R = Number(prompt("Nhập bán kính của hình tròn:"));
+        var chuVi = 2 * 3.14 * R;
+        var dienTich = 3.14 * R * R;
+        console.log("Chu vi của hình tròn là: " + chuVi);
+        console.log("Diện tích của hình tròn là: " + dienTich);
+    </script>
+</body>
+</html>

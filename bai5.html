@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section06</title>
+</head>
+<body>
+    <script>
+        let a = 5;
+        let b= "5";
+        console.log(a==b);  //True. "b" tự động chuyển đổi kiểu dữ liệu từ chuỗi thành số nguyên
+        console.log(a===b); //False. So sánh giá trị và kiểu dữ liệu => không cùng kiểu
+        console.log(a!=b);  //False. Tương tự như [==], "b" tự động chuyển đổi kiểu dữ liệu từ chuỗi thành số nguyên
+        console.log(a!==b); //True. Tương tự như [===], không cùng kiểu dữ liệu
+
+        let c = 6;
+        let result = ++c + c + c++ + ++c + c;
+        //result = 7 + 7 + 7 + 9 + 9 = 39
+
+        console.log(0 || NaN || "Rikkei Academy" || null);  //Rikkei Academy. Giá trị duy nhất không thuộc: false, 0, null, undefined, NaN
+        console.log(null || NaN || false || null);  //false. Tất cả các giá trị đều là falsy
+        console.log(undefined || 1 || 5 || null);   //1. 1 và 5 là giá trị truthy nhưng 1 đứng trước
+        console.log("" || null || 5 || NaN);    //5. Giá trị truthy duy nhất
+        console.log(1 || null || 12 || NaN);    //1. 1 được kiểm tra đầu tiên và là giá trị truthy
+
+        console.log(0 && 1 && "Rikkei Academy" &&null); //0. Kiểm tra từ trái sang phải và trả về giá trị đầu tiên mà nó gặp là "falsy"
+        console.log(2 && NaN && false && null); //NaN. 2 là truthy nhưng NaN là falsy nên biểu thức dừng lại và trả về giá trị sai
+        console.log(3 && 1 && 5 && null);   //null. Giá trị falsy duy nhất
+        console.log("1" && undefined && 5 && NaN);  //undefined. Giá trị falsy đầu tiên
+        console.log(1 && null && 12 && NaN);    //null. Giá trị falsy đầu tiên
+    </script>
+</body>
+</html>
